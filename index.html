@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5th Monthsary Love Story</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <script src="assets/sweetalert2.all.min.js"></script>
+  <style>
+    body {
+      background: url(assets/img/background.gif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 2rem;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden; 
+    }
+    section {
+      background:#f4f4f4;
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      padding: 2rem;
+      margin: auto;
+      max-width: 600px;
+      overflow: hidden !important;
+    }
+    .closing{
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    .inside p {
+      font-size: 13px;
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 1em;
+      text-indent: 2em;
+    }
+    main{
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <audio id="myAudio" src="assets/audio/Hale - Kung Wala Ka.mp3"></audio>
+    <div class="text-center h-100 d-flex align-items-center justify-content-center">
+      <button type="button" id="audioOn" class="btn me-3 btn-lg btn-dark" data-bs-trigger="modal">Open</button>
+      <button type="button" class="btn btn-danger btn-lg" id="errorMessage">More</button>
+    </div>
+
+    <div id="letterMessage" onclick="document.getElementById('letterMessage').style.display = 'none';" class="modal" data-bs-backdrop="static">
+     <div class="modal-dialog">
+      <section class="pb-0">
+
+        <div class="mb-5">
+         <button type="button" onclick="" class="float-end btn-close"></button>
+         <h4 class="mb-3">Happy 5th Monthsary</h1>
+         </div>
+         <div class="inside">
+          <p>
+            Sa una natun nga pag kitaay didto ang pinaka una nga pag sinuplada ko, kay ang akun gusto solo date lng man
+            tani sa atun first date. Pay hambal mo tana nga upod mo imo barkada, indi pa tani ko mag sugot iya as in pay
+            kay tungod first meet ta nga duwa di ko man gusto nga masayang ang mag oras nga maka upod ka, so si ako nag
+            huo na lang.
+          </p>
+          <p>
+            Ambi ko iya ga damgu lng ako sng time nga amo to pero tuod na gali iya nga ka kita ko maanyag nga dalaga,
+            tapos nangin akun pa. Damu naman ta mga indi pag hangpanay mula umpisa astang sa makalamabot kita sa amuni.
+            Wala man ko mag pati nga maka lambot ta sa amo sini, kay daw ka damu naman sang mga gin awayan ta di bala?
+            Pero daku ang akun pasalamat kay bisan anong natabu wala mo ako gin sukuan.
+          </p>
+          <p>
+            Damu pata ma agyan nga mga unos sa atun relasyon, testingan gid na iya asta san-o kita maga pakabakod nga
+            atubangon na, basta ang akun lang mahambal nga bisan sa ano man nga sitwasyon, ma gamu man ukon masulhay,
+            ari gid ko di para sa imo nga ka upod mo sa bawat handom mo.
+          </p>
+
+          <p>
+            Sa subong mas lala ni ang atun nga gaka agyan subong, pero sa tuod lng nahadlok gid ko
+            nga madula ka sa akun. Ano lang ah, salig guid babii malagpasan ta gid ni ang mga ga abot nga mga problema sa atun. Tandaan mo perme palangga palangga taka kag indi gid na mag bag-o.
+          </p>
+
+          <p>
+            Pasensiya guid kung may times nga daw gasuko na ako ha, kag salamat man bisan papaano wala mo ako gina sukuan. I love you babii happy 5 months sa atun duwa, pasensiya kung wla pa gid ko regalo ha, mabawi gid ko pag naka plastar na. Pasensiya man kung di pa ta ka kitaay liwat sa subong. Kinahanglan ta mani para sa relasyon ta , gamay na lng nga tion ma updanay gid ta nga duwa nga wala na sang mga limitasyon, basta palangga palangga ta gid ka kag patawara ako sa subong kay walang wala pa ako pero gina pangako ko through ups and down imo ako sng buong buo. 
+          </p>
+          <div class="closing">
+            <h6 style="font-family: magneto;">loving you,</h6>
+            <h5 style="font-family: magneto;" class="text-danger">Camilo &#x2665</h6>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script>
+
+  </script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var x = document.getElementById("myAudio");
+
+var btnPlay = document.getElementById('audioOn'); // Add 'document.' here
+
+btnPlay.onclick = function () {
+  x.play();
+  document.getElementById('letterMessage').style.display = 'block';
+}
+
+function pauseAudio() {
+  x.pause();
+}
+
+
+  var open = document.getElementById("errorMessage");
+
+open.onclick = function() {
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Something went wrong!",
+    footer: '<a href="#">Why do I have this issue?</a>',
+    showCancelButton: false,
+    confirmButtonText: 'OK',
+    confirmButtonColor: '#3085d6',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // Redirect to main.html
+      window.location.href = 'main.html';
+    }
+  });
+};
+
+</script>
+</body>
+
+</html>
