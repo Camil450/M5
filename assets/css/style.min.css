@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+:root {
+  --var-color: #164b60;
+  --var-font-size: 1.45rem;
+}
+html,
+body {
+  background: #f4f4f4;
+  scroll-behavior: smooth;
+}
+.btn-outline-dark {
+  background: var(--var-color);
+  border: 2px solid var(--var-color) !important;
+  color: white;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.btn-outline-dark:hover {
+  background: transparent;
+  color: var(--var-color);
+}
+
+/* Sections */
+section {
+  height: 100vh;
+}
+
+/* header / home */
+
+#Home section {
+  height: 100vh !important;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Home h1 {
+  font-weight: 600;
+  font-size: 42px;
+}
+#Home h1 span {
+  color: var(--var-color);
+}
+#Home .flex {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.img-figure {
+  height: 100%;
+  width: 100%;
+}
+.img-figure img {
+  height: 450px;
+  width: 100%;
+}
+#Home .socmed {
+  display: inline-block;
+  margin-top: 60px;
+}
+#Home .socmed i {
+  border-radius: 50%;
+  border: 2px solid var(--var-color);
+  padding: 10px;
+  font-size: 30px;
+}
